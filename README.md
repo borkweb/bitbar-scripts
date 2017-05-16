@@ -1,8 +1,10 @@
 # BitBar Scripts
 
-## Prerequisites
+## Installation
 
-Install [BitBar](https://getbitbar.com/)
+1. Install [BitBar](https://getbitbar.com/)
+1. Clone this repo
+1. Set the cloned repo as the plugin directory via "Change Plugin Folder" option in BitBar
 
 ## Scripts
 
