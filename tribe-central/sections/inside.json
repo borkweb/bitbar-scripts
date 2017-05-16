@@ -1,0 +1,14 @@
+{
+	"name": "Inside.tri.be",
+	"nested": false,
+	"items": [
+		{
+			"url": "http://inside.tri.be/maintenance-releases/",
+			"name": "Maintenance Releases"
+		},
+		{
+			"url": "http://inside.tri.be/outages/",
+			"name": "Outages"
+		}
+	]
+}
