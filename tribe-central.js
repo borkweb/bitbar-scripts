@@ -202,7 +202,11 @@ var sections = {
 			{
 				'url': 'https://central.tri.be/time_entries/report?criterias%5B%5D=member&period_type=1&period=current_month&columns=week&criterias%5B%5D=issue',
 				'name': 'Monthly Tickets',
-			}
+			},
+			{
+				'url': 'http://bit.ly/2rmYRpk',
+				'name': 'Pull Requests',
+			},
 		],
 	},
 };
