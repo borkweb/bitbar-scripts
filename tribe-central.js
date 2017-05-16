@@ -6,7 +6,7 @@
 <bitbar.version>v1.0.0</bitbar.version>
 <bitbar.author>Matthew Batchelder</bitbar.author>
 <bitbar.author.github>borkweb</bitbar.author.github>
-<bitbar.desc></bitbar.desc>
+<bitbar.desc>Based on the Tribe Central script built by Gustavo Bordoni (bordoni)</bitbar.desc>
 <bitbar.image></bitbar.image>
 <bitbar.dependencies>node, npm, npm/fs, npm/home-config, npm/googleapis, npm/google-auth-library, npm/http, npm/moment, npm/open</bitbar.dependencies>
 <bitbar.abouturl></bitbar.abouturl>
