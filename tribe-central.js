@@ -33,10 +33,6 @@ var sections = {
 				'name': 'Tribe Common',
 			},
 			{
-				'url': 'https://github.com/moderntribe/advanced-post-manager',
-				'name': 'Advanced Post Manager',
-			},
-			{
 				'name': 'The Events Calendar',
 			},
 			{
@@ -86,7 +82,7 @@ var sections = {
 				'name': 'Image Widget Plus',
 			},
 			{
-				'name': 'Sites',
+				'name': 'Sites & Services',
 			},
 			{
 				'url': 'https://github.com/moderntribe/eventscalendarpro.com',
@@ -106,6 +102,10 @@ var sections = {
 			},
 			{
 				'name': 'Misc',
+			},
+			{
+				'url': 'https://github.com/moderntribe/advanced-post-manager',
+				'name': 'Advanced Post Manager',
 			},
 			{
 				'url': 'https://github.com/moderntribe/TribalScents',
