@@ -20,197 +20,16 @@ if ( process.env.BitBar ) {
 	console.log('---');
 }
 
-var sections = {
-	repos: {
-		'name': 'Repos',
-		'nested': true,
-		'items': [
-			{
-				'name': 'Common',
-			},
-			{
-				'url': 'https://github.com/moderntribe/tribe-common',
-				'name': 'Tribe Common',
-			},
-			{
-				'name': 'The Events Calendar',
-			},
-			{
-				'url': 'https://github.com/moderntribe/the-events-calendar',
-				'name': 'TEC',
-			},
-			{
-				'url': 'https://github.com/moderntribe/events-community',
-				'name': 'Community',
-			},
-			{
-				'url': 'https://github.com/moderntribe/events-community-tickets',
-				'name': 'Community Tickets',
-			},
-			{
-				'url': 'https://github.com/moderntribe/events-eventbrite',
-				'name': 'Eventbrite',
-			},
-			{
-				'url': 'https://github.com/moderntribe/events-filterbar',
-				'name': 'Filterbar',
-			},
-			{
-				'url': 'https://github.com/moderntribe/events-pro',
-				'name': 'PRO',
-			},
-			{
-				'name': 'Event Tickets',
-			},
-			{
-				'url': 'https://github.com/moderntribe/event-tickets',
-				'name': 'Event Tickets',
-			},
-			{
-				'url': 'https://github.com/moderntribe/event-tickets-plus',
-				'name': 'Event Tickets Plus',
-			},
-			{
-				'name': 'Image Widget',
-			},
-			{
-				'url': 'https://github.com/moderntribe/image-widget',
-				'name': 'Image Widget',
-			},
-			{
-				'url': 'https://github.com/moderntribe/image-widget-plus',
-				'name': 'Image Widget Plus',
-			},
-			{
-				'name': 'Sites & Services',
-			},
-			{
-				'url': 'https://github.com/moderntribe/eventscalendarpro.com',
-				'name': 'TEC.com',
-			},
-			{
-				'url': 'https://github.com/moderntribe/calendar-saas',
-				'name': 'Calendar SaaS',
-			},
-			{
-				'url': 'https://github.com/moderntribe/event-aggregator-site',
-				'name': 'Event Aggregator',
-			},
-			{
-				'url': 'https://github.com/moderntribe/pue-service',
-				'name': 'PUE',
-			},
-			{
-				'name': 'Misc',
-			},
-			{
-				'url': 'https://github.com/moderntribe/advanced-post-manager',
-				'name': 'Advanced Post Manager',
-			},
-			{
-				'url': 'https://github.com/moderntribe/TribalScents',
-				'name': 'CodeSniffer: Tribal Scents',
-			},
-			{
-				'url': 'https://github.com/moderntribe/tr1b0t',
-				'name': 'Hubot: tr1b0t',
-			},
-			{
-				'url': 'https://github.com/moderntribe/tribe-jenkins-scripts',
-				'name': 'Jenkins Scripts',
-			},
-			{
-				'url': 'https://github.com/moderntribe/product-taskmaster',
-				'name': 'Product Taskmaster',
-			},
-			{
-				'url': 'https://github.com/moderntribe/tribe-product-utils',
-				'name': 'Product Utils',
-			},
-			{
-				'url': 'https://github.com/borkweb/bitbar-scripts',
-				'name': 'Scripts: BitBar',
-			},
-			{
-				'url': 'https://github.com/borkweb/tampermonkey-scripts',
-				'name': 'Scripts: Tampermonkey',
-			},
-		],
-	},
-	scrums: {
-		'name': 'Scrums',
-		'nested': false,
-		items: [
-			{
-				'id': 77018,
-				'name': 'Dev',
-			},
-			{
-				'id': 77844,
-				'name': 'Leadership Weekly',
-			},
-			{
-				'id': 77018,
-				'name': 'Plugins',
-			},
-			{
-				'id': 74444,
-				'name': 'SaaS',
-			},
-			{
-				'id': 77977,
-				'name': 'TEC.com Sprint 20',
-			},
-		],
-	},
-	code_reviews: {
-		'name': 'Code Reviews',
-		'nested': false,
-		'items': [
-			{
-				'id': 77556,
-				'name': 'Plugins',
-			},
-		],
-	},
-	queries: {
-		'name': 'Queries',
-		'nested': false,
-		'items': [
-			{
-				'url': 'http://m.tri.be/mytix',
-				'name': 'My Tickets This Week',
-			},
-			{
-				'url': 'http://m.tri.be/products-this-week',
-				'name': 'Products This Week',
-			},
-			{
-				'url': 'http://m.tri.be/products-next-week',
-				'name': 'Products Next Week',
-			},
-		],
-	},
-	extras: {
-		'name': 'Data',
-		'nested': false,
-		'items': [
-			{
-				'url': 'https://central.tri.be/time_entries/report?criterias%5B%5D=member&period_type=2&from=2017-01-01&to=&columns=week&criterias%5B%5D=',
-				'name': 'Weekly Hours',
-			},
-			{
-				'url': 'https://central.tri.be/time_entries/report?criterias%5B%5D=member&period_type=1&period=current_month&columns=week&criterias%5B%5D=issue',
-				'name': 'Monthly Tickets',
-			},
-			{
-				'url': 'http://bit.ly/2rmYRpk',
-				'name': 'Pull Requests',
-			},
-		],
-	},
-};
+const fs = require( 'fs' );
 
+var stat;
+var sections = {};
+
+try {
+	sections = require( './tribe-central/sections.json' );
+} catch( err ) {
+	sections = require( './tribe-central/sections.sample.json' );
+}
 
 if ( process.env.BitBar ) {
 	var section = null;
@@ -222,6 +41,21 @@ if ( process.env.BitBar ) {
 		}
 
 		section = sections[ key ];
+
+		if (
+			null !== section
+			&& 'object' !== typeof section
+		) {
+			try {
+				section = require( './tribe-central/' + section );
+			} catch( err ) {
+				section = {};
+			}
+		}
+
+		if ( 'undefined' === typeof section.name ) {
+			continue;
+		}
 
 		prefix = section.nested ? '--' : '';
 
