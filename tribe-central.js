@@ -108,6 +108,14 @@ var sections = {
 				'name': 'Misc',
 			},
 			{
+				'url': 'https://github.com/moderntribe/TribalScents',
+				'name': 'CodeSniffer: Tribal Scents',
+			},
+			{
+				'url': 'https://github.com/moderntribe/tr1b0t',
+				'name': 'Hubot: tr1b0t',
+			},
+			{
 				'url': 'https://github.com/moderntribe/tribe-jenkins-scripts',
 				'name': 'Jenkins Scripts',
 			},
@@ -120,12 +128,12 @@ var sections = {
 				'name': 'Product Utils',
 			},
 			{
-				'url': 'https://github.com/moderntribe/tr1b0t',
-				'name': 'tr1b0t',
+				'url': 'https://github.com/borkweb/bitbar-scripts',
+				'name': 'Scripts: BitBar',
 			},
 			{
-				'url': 'https://github.com/moderntribe/TribalScents',
-				'name': 'Tribal Scents',
+				'url': 'https://github.com/borkweb/tampermonkey-scripts',
+				'name': 'Scripts: Tampermonkey',
 			},
 		],
 	},
