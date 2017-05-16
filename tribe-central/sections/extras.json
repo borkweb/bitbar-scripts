@@ -1,0 +1,26 @@
+{
+	"name": "Other Links",
+	"nested": false,
+	"items": [
+		{
+			"url": "http://design.tri.be/brand-guide/",
+			"name": "Brand Guide"
+		},
+		{
+			"url": "https://docs.google.com/spreadsheets/d/12uH6QjZsxcwuNz5ba9aYeEwQO5u6rsnfvVb64UKUXeo/edit#gid=85",
+			"name": "Conference Rooms"
+		},
+		{
+			"url": "http://jenkins.tri.be:8080/",
+			"name": "Jenkins"
+		},
+		{
+			"url": "https://spacetime.am/t/tribe",
+			"name": "Spacetime"
+		},
+		{
+			"url": "https://timezone.io/team/modern-tribe",
+			"name": "Timezone.io"
+		}
+	]
+}
