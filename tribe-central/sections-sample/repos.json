@@ -70,6 +70,10 @@
 			"name": "Calendar SaaS"
 		},
 		{
+			"url": "https://github.com/moderntribe/calendar-saas-app",
+			"name": "Calendar SaaS App"
+		},
+		{
 			"url": "https://github.com/moderntribe/event-aggregator-site",
 			"name": "Event Aggregator"
 		},
@@ -109,7 +113,7 @@
 			"name": "Scripts: BitBar"
 		},
 		{
-			"url": "https://github.com/borkweb/tampermonkey-scripts",
+			"url": "https://github.com/moderntribe/tampermonkey-scripts",
 			"name": "Scripts: Tampermonkey"
 		}
 	]
