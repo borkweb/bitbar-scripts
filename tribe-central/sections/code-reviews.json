@@ -1,10 +1,14 @@
 {
-	"name": "Code Reviews",
+	"name": "Management",
 	"nested": false,
 	"items": [
 		{
 			"id": 77556,
-			"name": "Plugins"
+			"name": "Plugin CRs"
+		},
+		{
+			"id": 81248,
+			"name": "Leadership: Plugins"
 		}
 	]
 }
