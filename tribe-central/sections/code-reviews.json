@@ -3,12 +3,32 @@
 	"nested": false,
 	"items": [
 		{
+			"id": 83173,
+			"name": "EA CRs"
+		},
+		{
 			"id": 77556,
-			"name": "Plugin CRs"
+			"name": "FR CRs"
+		},
+		{
+			"id": 89418,
+			"name": "MR CRs"
+		},
+		{
+			"id": 89637,
+			"name": "Lumin CRs"
+		},
+		{
+			"id": 89662,
+			"name": "TEC CRs"
 		},
 		{
 			"id": 81248,
 			"name": "Leadership: Plugins"
+		},
+		{
+			"url": "https://central.tri.be/issues?query_id=2933",
+			"name": "All CR Tickets"
 		}
 	]
 }
