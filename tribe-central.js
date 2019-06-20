@@ -63,7 +63,7 @@ for ( var key in sections ) {
 
 	prefix = section.nested ? '--' : '';
 
-	function eachRecursive( child, nest, pref ) {
+	function eachRecursive( child, nest ) {
 		if ( 'undefined' === typeof nest ) {
 			nest = 0;
 		}
