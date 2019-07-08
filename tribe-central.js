@@ -1,4 +1,4 @@
-#!/usr/bin/env /Users/camwyn/.nvm/versions/node/v9.11.2/bin/node
+#!/usr/bin/env /usr/local/bin/node
 /* jshint esversion: 6, loopfunc: true */
 
 /*
