@@ -3,32 +3,16 @@
 	"nested": false,
 	"items": [
 		{
-			"id": 83173,
-			"name": "EA CRs"
+			"id": 94970,
+			"name": "Backend Management"
 		},
 		{
-			"id": 77556,
-			"name": "FR CRs"
+			"id": 122200,
+			"name": "Dev 1:1s"
 		},
 		{
-			"id": 89418,
-			"name": "MR CRs"
-		},
-		{
-			"id": 89637,
-			"name": "Lumin CRs"
-		},
-		{
-			"id": 89662,
-			"name": "TEC CRs"
-		},
-		{
-			"id": 81248,
-			"name": "Leadership: Plugins"
-		},
-		{
-			"url": "https://central.tri.be/issues?query_id=2933",
-			"name": "All CR Tickets"
+			"id": 122189,
+			"name": "Performance Reviews"
 		}
 	]
 }

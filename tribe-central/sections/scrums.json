@@ -3,32 +3,28 @@
 	"nested": false,
 	"items": [
 		{
-			"id": 89396,
-			"name": "1:1s & Meetings"
+			"id": 122207,
+			"name": "General Communication"
 		},
 		{
-			"id": 77018,
-			"name": "Dev"
+			"id": 122219,
+			"name": "Dev PTO"
 		},
 		{
-			"id": 77844,
-			"name": "Leadership Weekly"
+			"id": 122213,
+			"name": "Dev Bureaucracy"
 		},
 		{
-			"id": 77227,
-			"name": "Planning"
+			"id": 120489,
+			"name": "Products Code Scrum"
 		},
 		{
-			"id": 77018,
-			"name": "Plugins"
+			"id": 45086,
+			"name": "Agency BE"
 		},
 		{
-			"id": 74444,
-			"name": "SaaS"
-		},
-		{
-			"id": 77977,
-			"name": "TEC.com Sprint 20"
+			"id": 124508,
+			"name": "BE & Eng Meeting"
 		}
 	]
 }

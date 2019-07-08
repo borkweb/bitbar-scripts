@@ -2,6 +2,7 @@
 	"repos"       : "sections-sample/repos.json",
 	"scrums"      : "sections/scrums.json",
 	"code-reviews": "sections/code-reviews.json",
+	"projects"    : "sections/projects.json",
 	"queries"     : "sections-sample/queries.json",
 	"data"        : "sections/data.json",
 	"inside"      : "sections/inside.json",
