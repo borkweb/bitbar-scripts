@@ -9,6 +9,14 @@
 				{
 					"url": "https://github.com/moderntribe/tribe-common",
 					"name": "Tribe Common"
+				},
+				{
+					"url": "https://github.com/moderntribe/tribe-common-styles",
+					"name": "Tribe Common Styles"
+				},
+				{
+					"url": "https://github.com/moderntribe/tribe-testing-facilities",
+					"name": "Testing Facilities"
 				}
 			]
 		},
@@ -81,12 +89,30 @@
 			]
 		},
 		{
+			"name": "Other plugins",
+			"nested": true,
+			"items": [
+				{
+					"url": "https://github.com/moderntribe/advanced-post-manager",
+					"name": "Advanced Post Manager"
+				}
+			]
+		},
+		{
 			"name": "Sites & Services",
 			"nested": true,
 			"items": [
 				{
+					"url": "https://github.com/moderntribe/products-engineering",
+					"name": "Engineering Docs"
+				},
+				{
 					"url": "https://github.com/moderntribe/eventscalendarpro.com",
 					"name": "TEC.com"
+				},
+				{
+					"url": "https://github.com/moderntribe/tec-docs",
+					"name": "TEC Docs"
 				},
 				{
 					"url": "https://github.com/moderntribe/calendar-saas",
@@ -106,30 +132,17 @@
 				}
 			]
 		},
-
 		{
-			"name": "Misc",
+			"name": "Automation",
 			"nested": true,
 			"items": [
-				{
-					"url": "https://github.com/moderntribe/square-one",
-					"name": "SquareOne"
-				},
-				{
-					"url": "https://github.com/moderntribe/products-engineering",
-					"name": "Engineering Docs"
-				},
-				{
-					"url": "https://github.com/moderntribe/advanced-post-manager",
-					"name": "Advanced Post Manager"
-				},
 				{
 					"url": "https://github.com/moderntribe/TribalScents",
 					"name": "CodeSniffer: Tribal Scents"
 				},
 				{
-					"url": "https://github.com/moderntribe/tr1b0t",
-					"name": "Hubot: tr1b0t"
+					"url": "https://github.com/moderntribe/botman-tr1b0t",
+					"name": "Botman: tr1b0t"
 				},
 				{
 					"url": "https://github.com/moderntribe/tribe-jenkins-scripts",
@@ -142,6 +155,20 @@
 				{
 					"url": "https://github.com/moderntribe/tribe-product-utils",
 					"name": "Product Utils"
+				},
+				{
+					"url": "https://github.com/moderntribe/tribe-cli",
+					"name": "Tribe CLI"
+				}
+			]
+		},
+		{
+			"name": "Misc",
+			"nested": true,
+			"items": [
+				{
+					"url": "https://github.com/moderntribe/square-one",
+					"name": "SquareOne"
 				},
 				{
 					"url": "https://github.com/borkweb/bitbar-scripts",
